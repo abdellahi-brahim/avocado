@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_06_21_114334) do
   create_table "dogs", force: :cascade do |t|
+    t.string "name"
     t.integer "person_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -19,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_21_114334) do
   end
 
   create_table "people", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
